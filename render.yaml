@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: express-sample-app
+    env: node
+    plan: free
+    region: singapore   # or oregon / frankfurt
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    runtime: "node"
+    branch: main
+    autoDeploy: true
+    
